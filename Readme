@@ -1,0 +1,16 @@
+Тестовое задание
+
+
+Как запустить. Скачать контейнер hub.docker.com - gilbey7s/tets_mainslab:latest
+Либо собрать с Dockerfile в репозитории проекта
+
+После запуска доступны три эндпоинта:
+1)localhost:8000/api/v1/download/ - импорт данных из excel в бд - в тело запроса можно передать пути до файлов - 
+  {
+    "file": "/project/data/bills.xlsx"
+  }
+  {
+    "file": "/project/data/client_org.xlsx"
+  }
+2)localhost:8000/api/v1/clients/ - данные о клиентах
+3)localhost:8000/api/v1/bills/ - данные организаций клиентов
