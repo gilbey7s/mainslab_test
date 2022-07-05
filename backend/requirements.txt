@@ -1,0 +1,8 @@
+Django
+djangorestframework
+drf-nested-routers
+django-filter
+pillow
+openpyxl
+gunicorn
+psycopg2-binary
