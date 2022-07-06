@@ -73,7 +73,7 @@ def download_excel_view(request):
             client_name = sheet_next[row][0].value
             name = sheet_next[row][1].value
             address = str(sheet_next[row][2].value)
-            if address != ' ' != '-':
+            if True != address.isspace() and address[0] != '-':
                 address ='Адрес: '+ address
             client_name_obj = get_object_or_404(Client, name=client_name)
             ClientOrganization(client_name=client_name_obj, name=name, address=address).save()
